@@ -23,6 +23,7 @@ public class spawner : MonoBehaviour
         {
             int rand = Random.Range(0, obstacles.Length);
             Vector3 position = new Vector3(Random.Range(-1.16f, 1.16f), transform.position.y, transform.position.z);
+            //Vector3 rotation = new Vector3(obstacles[rand].transform.rotation.x, obstacles[rand].transform.rotation.y, Random.Range(0, 180));
             Instantiate(obstacles[rand], position, Quaternion.identity);
             timeBtwSpawn = startTimeBtwSpawn;
             if(startTimeBtwSpawn > minTime)
