@@ -8,6 +8,10 @@ public class obstacle : MonoBehaviour
     private void Update()
     {
         transform.Translate(Vector2.down * obstacleSpeed * Time.deltaTime);
+        if(transform.position.y < -5.8f)
+        {
+            Destroy(gameObject);
+        }
     }
 
 
