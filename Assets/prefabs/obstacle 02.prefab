@@ -113,3 +113,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obstacleSpeed: 2
+  targetY: -6
