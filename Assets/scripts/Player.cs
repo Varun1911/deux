@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Player : MonoBehaviour
 {
@@ -17,4 +15,5 @@ public class Player : MonoBehaviour
     {
         transform.RotateAround(centre, Vector3.forward, movement * Time.fixedDeltaTime * -moveSpeed);
     }
+
 }

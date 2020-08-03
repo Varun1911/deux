@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2594177500764469344}
   - component: {fileID: 2594177500764469349}
   m_Layer: 0
-  m_Name: Rotating Obstacle 1
+  m_Name: Rotating Obstacle 2
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -124,4 +124,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obstacleSpeed: 2
   targetY: -6
-  rotateAngle: 100
+  rotateAngle: -100

@@ -6,6 +6,7 @@ public class obstacle : MonoBehaviour
     [SerializeField] protected float obstacleSpeed = 40f;
     [SerializeField] protected float targetY;
     protected Vector2 target;
+  
 
     private void Start()
     {
@@ -25,11 +26,11 @@ public class obstacle : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        GameOver();
+        GameEnd();
     }
 
-    private void GameOver()
+    private void GameEnd()
     {
-        SceneManager.LoadScene(0);
+       SceneManager.LoadScene(0);
     }
 }

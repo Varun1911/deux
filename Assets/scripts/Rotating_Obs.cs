@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
     public class Rotating_Obs : obstacle
 {
-    [SerializeField] float rotateAngle;
+    [SerializeField] float rotateAngle = 0f;
 
     public override void Update()
     {
