@@ -26,11 +26,8 @@ public class obstacle : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        GameEnd();
+        GameManager.instance.GameEnd();
     }
 
-    private void GameEnd()
-    {
-       SceneManager.LoadScene(0);
-    }
+   
 }
