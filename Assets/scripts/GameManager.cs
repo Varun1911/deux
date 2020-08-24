@@ -38,6 +38,6 @@ public class GameManager : MonoBehaviour
     public void GameEnd()
     {
         SetHighScore();
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
