@@ -1,14 +1,16 @@
 ﻿using UnityEngine.UI;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class GameManager : MonoBehaviour
 {
+    [SerializeField] LevelLoader levelLoader;
     [SerializeField] float baseScore = 30f;
     [SerializeField] Text scoreText;
     [SerializeField] spawner spawnerRef;
     float score = 0f;
-
+    
     public static GameManager instance;
 
     private void Awake()
@@ -41,6 +43,6 @@ public class GameManager : MonoBehaviour
     {
         SetScore();
         SetHighScore();
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        levelLoader.LoadNextLevel();
     }
 }

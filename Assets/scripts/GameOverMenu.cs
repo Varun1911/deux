@@ -3,9 +3,11 @@ using UnityEngine;
 
 public class GameOverMenu : MonoBehaviour
 {
+    [SerializeField] LevelLoader levelLoader;
+
     public void ReplayGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        levelLoader.LoadPrevLevel();
     }
 
     public void QuitGame()
