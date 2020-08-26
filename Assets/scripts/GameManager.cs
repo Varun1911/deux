@@ -6,7 +6,6 @@ public class GameManager : MonoBehaviour
 {
     [SerializeField] float baseScore = 30f;
     [SerializeField] Text scoreText;
-    [SerializeField] Text highScoreText;
     [SerializeField] spawner spawnerRef;
     float score = 0f;
 
@@ -15,7 +14,6 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         instance = this;
-        highScoreText.text = PlayerPrefs.GetInt("HighScore", 0).ToString("0");
     }
 
 
@@ -30,14 +28,19 @@ public class GameManager : MonoBehaviour
         if (score > PlayerPrefs.GetInt("HighScore" , 0))
         {
             PlayerPrefs.SetInt("HighScore", (int)score);
-            highScoreText.text = score.ToString("0");
         }
 
     }
 
+    public void SetScore()
+    {
+        PlayerPrefs.SetInt("Score", (int)score);
+    }
+
     public void GameEnd()
     {
+        SetScore();
         SetHighScore();
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
