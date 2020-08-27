@@ -1,14 +1,17 @@
 ﻿using UnityEngine.UI;
 using UnityEngine;
-using UnityEngine.SceneManagement;
-using System.Collections;
 
 public class GameManager : MonoBehaviour
 {
-    [SerializeField] LevelLoader levelLoader;
-    [SerializeField] float baseScore = 30f;
+    //references
+    [SerializeField] GameObject _spawner;
+    [SerializeField] GameObject[] players;
     [SerializeField] Text scoreText;
     [SerializeField] spawner spawnerRef;
+
+
+    [SerializeField] LevelLoader levelLoader;
+    [SerializeField] float baseScore = 30f;
     float score = 0f;
     
     public static GameManager instance;
@@ -41,6 +44,12 @@ public class GameManager : MonoBehaviour
 
     public void GameEnd()
     {
+        foreach (GameObject player in players)
+        {
+            player.GetComponent<Player>().enabled = false;
+        }
+       _spawner.GetComponent<spawner>().enabled = false;
+
         SetScore();
         SetHighScore();
         levelLoader.LoadNextLevel();

@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class obstacle : MonoBehaviour
 {
@@ -26,6 +25,7 @@ public class obstacle : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        gameObject.GetComponent<obstacle>().enabled = false;
         GameManager.instance.GameEnd();
     }
 

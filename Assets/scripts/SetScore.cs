@@ -8,7 +8,7 @@ public class SetScore : MonoBehaviour
 
     private void Awake()
     {
-        highScoreText.text = "HI : " + PlayerPrefs.GetInt("HighScore", 0).ToString("0");
+        highScoreText.text = "BEST : " + PlayerPrefs.GetInt("HighScore", 0).ToString("0");
         scoreText.text = PlayerPrefs.GetInt("Score", 0).ToString("0");
     }
 }

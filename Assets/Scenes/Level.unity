@@ -220,6 +220,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66b302011f049e44cb77b1a11e6bca70, type: 3}
+--- !u!1 &252664524 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2399127114861235771, guid: 66b302011f049e44cb77b1a11e6bca70, type: 3}
+  m_PrefabInstance: {fileID: 252664523}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &414803131
 GameObject:
   m_ObjectHideFlags: 0
@@ -1596,6 +1601,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f2b5756563fad749ad97a0d8dfe011b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _spawner: {fileID: 869911562}
+  players:
+  - {fileID: 2399127115228168274}
+  - {fileID: 252664524}
   levelLoader: {fileID: 908264462}
   baseScore: 20
   scoreText: {fileID: 726707713}
@@ -1813,3 +1822,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66b302011f049e44cb77b1a11e6bca70, type: 3}
+--- !u!1 &2399127115228168274 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2399127114861235771, guid: 66b302011f049e44cb77b1a11e6bca70, type: 3}
+  m_PrefabInstance: {fileID: 2399127115228168273}
+  m_PrefabAsset: {fileID: 0}

@@ -1141,7 +1141,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: d72b97ce4e3e60f41925d5adebf7923a, type: 3}
-    m_FontSize: 98
+    m_FontSize: 76
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -1152,7 +1152,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'HI : 1352'
+  m_Text: 'BEST : 1352'
 --- !u!222 &2037764323
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1177,8 +1177,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000036079, y: -62.32}
-  m_SizeDelta: {x: 682.7392, y: 124.63992}
+  m_AnchoredPosition: {x: -0.000019595, y: -48.743}
+  m_SizeDelta: {x: 569.9998, y: 97.48508}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2078974234
 GameObject:
