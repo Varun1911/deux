@@ -8,7 +8,24 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        movement = Input.GetAxisRaw("Horizontal");
+        if(Input.touchCount > 0)
+        {
+            Touch touch = Input.GetTouch(0);
+            Vector3 touchPos = Camera.main.ScreenToWorldPoint(touch.position);
+            touchPos.z = 0f;
+            if (touch.phase == TouchPhase.Stationary )
+            {
+                if (touchPos.x > 0)
+                    movement = 1f;
+                else if (touchPos.x < 0)
+                    movement = -1f;
+            }
+            if (touch.phase == TouchPhase.Ended)
+            {
+                movement = 0f;
+            }
+            
+        }
     }
 
     private void FixedUpdate()
