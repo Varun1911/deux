@@ -16,7 +16,7 @@ public class obstacle : MonoBehaviour
     {
         transform.position = Vector2.MoveTowards(transform.position, target, obstacleSpeed * Time.deltaTime);
         
-        if(transform.position.y < -5.8f)
+        if(transform.position.y < -6.4f)
         {
             Destroy(gameObject);
         }

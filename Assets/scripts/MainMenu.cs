@@ -7,10 +7,12 @@ public class MainMenu : MonoBehaviour
     public void PlayGame()
     {
         levelLoader.LoadNextLevel();
+        Vibration.Vibrate(50);
     }
 
     public void QuitGame()
     {
+        Vibration.Vibrate(50);
         Application.Quit();
     }
 }

@@ -8,9 +8,9 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject[] players;
     [SerializeField] Text scoreText;
     [SerializeField] spawner spawnerRef;
-
-
     [SerializeField] LevelLoader levelLoader;
+
+
     [SerializeField] float baseScore = 30f;
     float score = 0f;
     
@@ -19,6 +19,7 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         instance = this;
+       // Application.targetFrameRate = 60;
     }
 
 
@@ -53,5 +54,6 @@ public class GameManager : MonoBehaviour
         SetScore();
         SetHighScore();
         levelLoader.LoadNextLevel();
+        Vibration.Vibrate(500);
     }
 }
