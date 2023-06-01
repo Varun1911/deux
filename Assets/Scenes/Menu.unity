@@ -1263,6 +1263,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Audio manager
       objectReference: {fileID: 0}
+    - target: {fileID: 8587962312938332158, guid: 8f03c286dd678a94185aa0e3655516fa, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 5ed9af94c965af546bdc112373e0c9e6, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f03c286dd678a94185aa0e3655516fa, type: 3}
 --- !u!1001 &7563949555989828356
@@ -1275,6 +1279,10 @@ PrefabInstance:
     - target: {fileID: 7563949556506962924, guid: 090a508a88648e649b4e3f3d83d99782, type: 3}
       propertyPath: m_Name
       value: LevelLoader
+      objectReference: {fileID: 0}
+    - target: {fileID: 7563949556506962924, guid: 090a508a88648e649b4e3f3d83d99782, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7563949556506962925, guid: 090a508a88648e649b4e3f3d83d99782, type: 3}
       propertyPath: m_LocalPosition.x
